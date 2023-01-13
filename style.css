@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: red;
+    overflow: hidden;
+}
+.gamecontainer{
+    background-color: blue;
+    background-image: url(bgs.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-size: 100vw;
+    width: 100%;
+    height: 100vh;
+}
+.dino{
+    background-image: url(damo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 214px;
+    height: 150px;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+.obsticle{
+    background-image: url(dragon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 204px;
+    height: 200px;
+    position: absolute;
+    bottom: 50px;
+    left: 130vh;
+}
+
+#ScoreCont{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    font-size: 30px;
+    border: solid;
+    border-radius: 7px;
+    visibility: visible;
+}
+.Gameover{
+    visibility: hidden;
+    position: absolute;
+    margin: 120px;
+    margin-left: 625px;
+    font-size: 50px;
+}
+
+.animateDino{
+    animation: dino 0.8s linear;
+}
+.absticleani{
+    animation: obsticleani 3s linear infinite;
+}
+
+@keyframes dino {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 400px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes obsticleani {
+    0%{
+        left: 100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+}
+
